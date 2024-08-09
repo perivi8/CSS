@@ -1,0 +1,24 @@
+
+h1{
+    color: brown;
+}
+
+
+p{
+    color: blue;
+    background-color: chartreuse;
+}
+
+
+span{
+    color: greenyellow;
+    background-color: brown !important;
+}
+
+
+li{
+    color: blueviolet; 
+    background-color: black;
+}
+
+

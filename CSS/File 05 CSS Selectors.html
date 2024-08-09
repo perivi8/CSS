@@ -1,0 +1,76 @@
+<!-- CSS Selectors  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+
+    <style>
+      
+      /* .firstpara is ' Seletor ' , color or anything is called ' Property ' , given color is ' Value ' */
+
+      .firstpara {
+        color: chartreuse;
+      }
+
+      /* if we choose different selector but same propty with different value , then it choose last priority */
+      /* if we move fourthpara to above the firstpara then it choose firstpara */
+
+      .fourthpara {
+        color: darkmagenta;
+      }
+
+      /* same like if we cosse same selector and same property with different color yhen also it choose last priority */
+      /*  what ever we enter it choose only last priority values in both id and class */
+
+      .firstpara {                                          /* It will become priority*/
+        color: yellow;                                   /* compare to above .firstpara , .fourthpara */
+      }
+
+      #secondpara {
+        color: brown;
+      }
+
+      #secondpara{                                    /* in ID also it choose last priority */
+        color: rgb(149, 0, 255); 
+      }
+      .thirdpara {
+        background-color: rgb(4, 245, 40);
+      }
+
+      /* Grouping Selector */
+      footer,span {
+        background-color: coral;
+      }
+
+      p{
+         border: 2px solid red;
+         color: violet;
+      }
+
+    
+    </style>
+  </head>
+
+  <body>
+
+    <h3>Css Selectors</h3>
+
+    <!-- fist priority it chose ID , next CLASS , after it check like p , span , h1 and sooo ..., -->
+
+    
+    <p class="firstpara fourthpara thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae?</p>
+    <p id="secondpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, expedita. </p>
+    <!-- It choose id as first priority , when we give both id and class -->
+    <p class="firstpara" id="secondpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione!</p>
+    <footer class="thirdpara">This is footer</footer>
+    <p>This is only paragraph</p>
+    <p>This another para</p>
+    <span>This is span</span>
+    <span>This is another span</span>
+
+
+  </body>
+</html>
