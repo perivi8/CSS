@@ -1,0 +1,51 @@
+<!--  Transition Property -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        main div{
+            background-color: brown;
+            height: 250px;
+            width: 250px;
+            
+        }
+        .class1{
+            background-color: rgb(21, 0, 255);
+        }
+
+        #box1:hover{
+            background-color: rgb(110, 253, 0);
+            height: 40px;
+            width: 40px;
+            border-radius: 15px;
+            transition-duration: 4s;    /* It create time to change the given conditions*/
+
+        }
+
+        #box2:hover{
+            background-color: rgb(253, 0, 236);
+            height: 300px;
+            width: 300px;
+            border-radius: 15px;
+            transition-duration: 2s;      /* It create time to change the given conditions*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box1">
+            HARI
+        </div>
+        <div class="class1" id="box2">
+            KRISHNA
+        </div>
+    </main>
+</body>
+</html>

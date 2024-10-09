@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .TL{
+            background-color: rgb(196, 161, 194);
+            color: aliceblue;
+            border: 4px solid purple;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 130px;
+            left: 450px;
+            /* z-index: 1; */
+        }
+        .TR{
+            background-color: rgb(196, 161, 194);
+            color: aliceblue;
+            border: 4px solid purple;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 20px;
+            left: 710px;
+            z-index: -1;
+        }
+        .MB{
+            background-color:rgb(196, 161, 194);
+            box-shadow: 2px 2px 77px black;
+            color: aliceblue;
+            border: 4px solid purple;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            top: 2px;
+            left: 530px;
+            z-index: -1;    /* If above box z-index value and below value same means , Then above value is applicable*/
+        }
+
+        .BL{
+            background-color: rgb(196, 161, 194);
+            color: aliceblue;
+            border: 4px solid purple;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: -25px;
+            left: 450px;
+            /* z-index: -2; */
+        }
+        .BR{
+            background-color: rgb(196, 161, 194);
+            color: aliceblue;
+            border: 4px solid purple;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top:-130px;
+            left: 710px;
+            /* z-index: -3; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="TL">Top_left</div>
+        <div class="TR">Top_Right</div>
+        <div class="MB">This is middle box</div>
+        <div class="BL">Bottom_left</div>
+        <div class="BR">Bottom_Right</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!--  Box Shadows and Text Shadows -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        main div{
+            background-color: burlywood;
+        
+        }
+
+        #box1{
+         /* box-shadow: x-axis y-axis color; */
+            box-shadow: -10px -10px red;          /* It show upper shadow */
+        }
+
+        #box2{
+         /* box-shadow: x-axis y-axis color; */
+            box-shadow: 10px 10px green;          /* It show lower shadow */
+        }
+
+        #box3{
+        /* box-shadow: x-axis y-axis blur value color; */  
+            box-shadow: 10px 10px 30px blue;
+        }
+        
+        h2{
+            text-shadow: 2px 2px white;
+        }
+
+    </style>
+  </head>
+  <body>
+    <main style="display: flex;gap: 105px;margin: 18px 80px;">
+      <div id="box1"><h2>Box 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maiores
+          debitis accusamus quas nemo corporis, ratione ut nisi consectetur
+          omnis quasi ex. Ad libero voluptate debitis quidem molestiae, unde
+          deleniti.
+        </p>
+      </div>
+      <div id="box2"><h2>Box 2</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+          laborum expedita, soluta a nam voluptatem quas esse sit incidunt
+          aperiam, quod molestiae ipsam veniam. Facere, dolorem impedit! Alias,
+          amet obcaecati.
+        </p>
+      </div>
+      <div id="box3"><h2>Box 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure,
+          id porro eos necessitatibus laboriosam, sapiente officiis quis maxime
+          molestiae dignissimos blanditiis officia a velit quas magnam, quam
+          sunt. Illo!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
